@@ -12,9 +12,11 @@
             <li>xml</li>
             <li>yaml</li>
         </ul>
-
+    <br>
     <p><b>How to use<b></p>
-    <p>Tools -> Format Converter</p>
+    <p>In main menu toolbar open <i>Tools -> Format Converter</i></p>
+    <p>The plugin page <a href="https://github.com/epm-dev-priporov/idea-format-converter-plugin"> github</a></p>
+    <p><a href="https://github.com/epm-dev-priporov/idea-format-converter-plugin/issues">Issue tracker</a></p>
     ]]></description>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
