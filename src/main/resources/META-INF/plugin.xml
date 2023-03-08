@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>dev.priporov.format-converter</id>
+    <name>Format-converter</name>
+    <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov/idea-notes">Dmitrii Priporov</vendor>
+    <version>0.9.0</version>
+
+    <description><![CDATA[
+    <p>Simple format converter plugin based on Jackson lib</p>
+    <p><b>Supported formats:<b></p>
+          <ul>
+            <li>json</li>
+            <li>xml</li>
+            <li>yaml</li>
+        </ul>
+
+    <p><b>How to use<b></p>
+    <p>Tools -> Format Converter</p>
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="dev.priporov.formatconverter.converter.JsonConverter"/>
+        <applicationService serviceImplementation="dev.priporov.formatconverter.converter.YamlConverter"/>
+        <applicationService serviceImplementation="dev.priporov.formatconverter.converter.XmlConverter"/>
+    </extensions>
+    <actions>
+        <action class="dev.priporov.formatconverter.main.OpenFormatConverterAction">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
