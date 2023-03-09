@@ -10,7 +10,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.ComboBox
 import com.intellij.openapi.ui.DialogWrapper
 import com.intellij.openapi.wm.WindowManager
-import com.intellij.openapi.wm.impl.ProjectFrameHelper
+import com.intellij.openapi.wm.impl.WindowManagerImpl
 import com.intellij.ui.dsl.builder.Align
 import com.intellij.ui.dsl.builder.AlignX
 import com.intellij.ui.dsl.builder.AlignY
@@ -38,7 +38,7 @@ class CustomDialogWrapper(project: Project) : DialogWrapper(true) {
     init {
         init()
         title = "Format Converter"
-        val size = (WindowManager.getInstance().allProjectFrames[0] as ProjectFrameHelper).getFrame()!!.size
+        val size = (WindowManager.getInstance() as WindowManagerImpl).getIdeFrame(project)?.component?.size!!
         setSize((size.width / 1.1).toInt(), (size.height / 1.1).toInt())
         setAutoAdjustable(false)
         setOKButtonText("Convert")
@@ -68,14 +68,10 @@ class CustomDialogWrapper(project: Project) : DialogWrapper(true) {
         }.resizableRow()
 
         row {
-            cell(
-                leftComboBox
-            )
+            cell(leftComboBox)
                 .align(AlignX.LEFT)
                 .align(Align.CENTER)
-            cell(
-                rightComboBox
-            )
+            cell(rightComboBox)
                 .align(AlignX.RIGHT)
                 .align(Align.CENTER)
         }
