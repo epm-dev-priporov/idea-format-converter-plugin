@@ -88,7 +88,11 @@ class CustomDialogWrapper(project: Project) : DialogWrapper(true) {
         targetLanguage: Language = targetEditorField.language
     ) {
         try {
-            val value = mapOfConverters[sourceLanguage]!!.toAny(sourceEditorField.getText())
+            val sourceText = sourceEditorField.getText()
+            if(sourceText.isNullOrBlank()){
+                return
+            }
+            val value = mapOfConverters[sourceLanguage]!!.toAny(sourceText)
             val convertedText = mapOfConverters[targetLanguage]?.toString(value)
             convertedText?.also { text ->
                 targetEditorField.setText(text)
