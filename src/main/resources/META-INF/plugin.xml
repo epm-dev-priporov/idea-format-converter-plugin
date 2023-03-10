@@ -2,10 +2,10 @@
     <id>dev.priporov.format-converter</id>
     <name>Format-converter</name>
     <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov">Dmitrii Priporov</vendor>
-    <version>0.9.0</version>
+    <version>0.8.1</version>
 
     <description><![CDATA[
-    <p>Simple format converter plugin based on Jackson lib</p>
+    <p>Simple format converter plugin based on Jackson lib. It helps to convert json-yaml-xml formats to each other.</p>
     <p><b>Supported formats:</b></p>
           <ul>
             <li>json</li>

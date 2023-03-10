@@ -1,5 +1,5 @@
 # Format Converter
-Simple format converter plugin based on Jackson lib.
+Simple format converter plugin based on Jackson lib. Simple format converter plugin based on Jackson lib. It helps to convert json-yaml-xml formats to each other.
 
 Supported formats:
 * json
