@@ -1,12 +1,12 @@
 <idea-plugin>
     <id>dev.priporov.format-converter</id>
     <name>Format-converter</name>
-    <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov/idea-notes">Dmitrii Priporov</vendor>
+    <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov">Dmitrii Priporov</vendor>
     <version>0.9.0</version>
 
     <description><![CDATA[
     <p>Simple format converter plugin based on Jackson lib</p>
-    <p><b>Supported formats:<b></p>
+    <p><b>Supported formats:</b></p>
           <ul>
             <li>json</li>
             <li>xml</li>
