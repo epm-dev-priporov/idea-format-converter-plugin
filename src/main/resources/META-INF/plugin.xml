@@ -2,7 +2,7 @@
     <id>dev.priporov.format-converter</id>
     <name>Format-converter</name>
     <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov">Dmitrii Priporov</vendor>
-    <version>0.8.2</version>
+    <version>0.9.0</version>
 
     <description><![CDATA[
     <p>Simple format converter plugin based on Jackson lib. It helps to convert json-yaml-xml formats to each other.</p>
@@ -18,6 +18,13 @@
     <p>The plugin page <a href="https://github.com/epm-dev-priporov/idea-format-converter-plugin"> github</a></p>
     <p><a href="https://github.com/epm-dev-priporov/idea-format-converter-plugin/issues">Issue tracker</a></p>
     ]]></description>
+    <change-notes>
+        <![CDATA[
+        <ul>
+            <li>9.0: Updated to 233.* version build</li>
+        </ul>
+        ]]>
+    </change-notes>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="dev.priporov.formatconverter.converter.JsonConverter"/>
