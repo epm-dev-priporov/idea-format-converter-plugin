@@ -2,7 +2,7 @@
     <id>dev.priporov.format-converter</id>
     <name>Format-converter</name>
     <vendor email="devpriporov@gmail.com" url="https://github.com/epm-dev-priporov">Dmitrii Priporov</vendor>
-    <version>0.9.0</version>
+    <version>1.0.0</version>
 
     <description><![CDATA[
     <p>Simple format converter plugin based on Jackson lib. It helps to convert json-yaml-xml formats to each other.</p>
@@ -21,7 +21,8 @@
     <change-notes>
         <![CDATA[
         <ul>
-            <li>9.0: Updated to 233.* version build</li>
+            <li>1.0.0: Updated to 241.* version build</li>
+            <li>0.9.0: Updated to 233.* version build</li>
         </ul>
         ]]>
     </change-notes>
